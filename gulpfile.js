@@ -29,7 +29,7 @@ var paths = {
     js:'js/'
 };
 
-
+/*
 gulp.task('browserify', function() {
     browserified=gulp.src(__dirname+'/test/spec/docxgenTest.spec.js')
         .pipe(browserify({}))
@@ -49,6 +49,7 @@ gulp.task('browserify', function() {
     browserified
         .pipe(gulp.dest(__dirname+'/browser/'))
 });
+*/
 
 gulp.task('allCoffee', function () {
 	gulp.src(paths.coffee)
@@ -64,7 +65,7 @@ gulp.task('allCoffee', function () {
 	a=a.pipe(concat('docxgenTest.spec.js'))
 		.pipe(gulp.dest('./test/spec'));
 });
-
+/*
 gulp.task('watch', function () {
 	gulp.src(paths.coffee)
 		.pipe(watch(function(files) {
@@ -150,5 +151,7 @@ gulp.task('jasmine',function(cb) {
 		cb();
 	});
 });
+*/
 
-gulp.task('default',['coffeeTest','jasmine','watch','livereload']);
+//gulp.task('default',['coffeeTest','jasmine','watch','livereload']);
+gulp.task('default',[]);
