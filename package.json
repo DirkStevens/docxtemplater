@@ -9,9 +9,6 @@
     }
   ],
   "main": "js/index.js",
-  "bin": {
-    "docxtemplater": "./js/cli.js"
-  },
   "keywords": [
     "docx",
     "templates",
